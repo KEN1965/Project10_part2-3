@@ -8,14 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    //Project10_part2 やっていきやしょう(๑>◡<๑)
+    //注文の基本的な詳細を取得する注文画面を作成していきます。まずはファイル作成
+    @StateObject var order = Order()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            Form {
+                Section {
+                    Picker("Select your cake type", selection: $order.type) {
+                        ForEach(Order.types.indices) {
+                            Text(Order.types[$0])
+                        }
+                    }
+                    Stepper("Number of cakes: \(order.quantity)",value: $order.quantity, in: 3...20)
+                }
+                Section {
+                    Toggle("Any apecial requests?", isOn: $order.specialRequestEnabled.animation())
+                    
+                    if order.specialRequestEnabled {
+                        Toggle("Add extra frosting", isOn: $order.extraFrosting)
+                        Toggle("Add extra sprinkles", isOn: $order.addSprinkles)
+                    }
+                }
+                Section {
+                    NavigationLink {
+                        AddressView(order: order)
+                    } label: {
+                        Text("Delivery details")
+                    }
+                }
+            }
+            .navigationTitle("Cupcake Corner")
         }
-        .padding()
     }
 }
 

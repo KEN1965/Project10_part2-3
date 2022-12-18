@@ -11,6 +11,8 @@
 		680B4C06294EE3E40063EE7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B4C05294EE3E40063EE7A /* ContentView.swift */; };
 		680B4C08294EE3E60063EE7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680B4C07294EE3E60063EE7A /* Assets.xcassets */; };
 		680B4C0B294EE3E60063EE7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680B4C0A294EE3E60063EE7A /* Preview Assets.xcassets */; };
+		680B4C12294EE4720063EE7A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B4C11294EE4720063EE7A /* Order.swift */; };
+		680B4C14294EE7C70063EE7A /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680B4C13294EE7C70063EE7A /* AddressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		680B4C05294EE3E40063EE7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		680B4C07294EE3E60063EE7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		680B4C0A294EE3E60063EE7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		680B4C11294EE4720063EE7A /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		680B4C13294EE7C70063EE7A /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				680B4C03294EE3E40063EE7A /* Project10_part2App.swift */,
 				680B4C05294EE3E40063EE7A /* ContentView.swift */,
+				680B4C11294EE4720063EE7A /* Order.swift */,
+				680B4C13294EE7C70063EE7A /* AddressView.swift */,
 				680B4C07294EE3E60063EE7A /* Assets.xcassets */,
 				680B4C09294EE3E60063EE7A /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				680B4C12294EE4720063EE7A /* Order.swift in Sources */,
+				680B4C14294EE7C70063EE7A /* AddressView.swift in Sources */,
 				680B4C06294EE3E40063EE7A /* ContentView.swift in Sources */,
 				680B4C04294EE3E40063EE7A /* Project10_part2App.swift in Sources */,
 			);
