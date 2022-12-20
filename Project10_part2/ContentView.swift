@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     //Project10_part2 やっていきやしょう(๑>◡<๑)
-    //注文の基本的な詳細を取得する注文画面を作成していきます。まずはファイル作成
+    //Delivery details のAddressViewを作っていきますが、その前にチェックするビューを作成！
     @StateObject var order = Order()
     
     var body: some View {
