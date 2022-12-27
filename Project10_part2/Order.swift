@@ -37,4 +37,24 @@ class Order: ObservableObject {
         }
         return true
     }
+    
+    var cost: Double {
+        //1 ケーキあたり 2 ドル
+        var cost = Double(quantity) * 2
+        
+        //複雑なケーキはより高価です
+        cost += (Double(type) / 2)
+        
+        //追加のフロスティングは $1/ケーキ
+        if extraFrosting {
+            cost += Double(quantity)
+        }
+        
+        //スプリンクルの $0.5/ケーキ
+        if addSprinkles {
+            cost += Double(quantity) / 2
+        }
+        
+        return cost
+    }
 }

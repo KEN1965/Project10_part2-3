@@ -12,7 +12,7 @@ struct AddressView: View {
     @ObservedObject var order: Order
     
     var body: some View {
-        //AddressViewを作っていきます  ContentViewから入力してみます。
+        //Project 10, part 2 の最後　Preparing for checkoutをやっていきましょう(๑>◡<๑)
         Form {
             Section {
                 TextField("Name", text: $order.name)
