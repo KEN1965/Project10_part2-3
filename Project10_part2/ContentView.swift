@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    //Project10_part2 やっていきやしょう(๑>◡<๑)
-    //Delivery details のAddressViewを作っていきますが、その前にチェックするビューを作成！
+    //Project10_part3 やっていきやしょう(๑>◡<๑)
+    
     @StateObject var order = Order()
     
     var body: some View {
