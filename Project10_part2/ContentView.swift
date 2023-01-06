@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    //Project10_part3 やっていきやしょう(๑>◡<๑)
+    //Project10_part3 Sending and receiving orders over the internet
+    //やっていきやしょう(๑>◡<๑)
     
     @StateObject var order = Order()
     
